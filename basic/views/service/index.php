@@ -6,20 +6,26 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Services Locators');
+$this->title = 'Наши сервисы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="services-locator-index">
+<div class="service-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="container">
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Services Locator',
-]), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+      <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= GridView::widget([
+      <p><?= Html::a('Новый сервис', ['create'], ['class' => 'btn btn-success']) ?></p>
+
+      <div class="ui-main_services row">
+          <h2>Боевые</h2>
+          <div class="row" id="battle_row" data-value="1"></div>
+          <h2>Тест</h2>
+          <div class="row" id="test_row" data-value="2"></div>
+      </div>
+    </div>
+
+    <!-- <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
@@ -32,6 +38,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]); ?>
+    ]); ?> -->
 
 </div>

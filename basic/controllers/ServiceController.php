@@ -3,14 +3,14 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\ServicesLocator;
+use app\models\Service;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ServiceController implements the CRUD actions for ServicesLocator model.
+ * ServiceController implements the CRUD actions for Service model.
  */
 class ServiceController extends Controller
 {
@@ -27,13 +27,13 @@ class ServiceController extends Controller
     }
 
     /**
-     * Lists all ServicesLocator models.
+     * Lists all Service models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => ServicesLocator::find(),
+            'query' => Service::find(),
         ]);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class ServiceController extends Controller
     }
 
     /**
-     * Displays a single ServicesLocator model.
+     * Displays a single Service model.
      * @param integer $id
      * @return mixed
      */
@@ -54,13 +54,13 @@ class ServiceController extends Controller
     }
 
     /**
-     * Creates a new ServicesLocator model.
+     * Creates a new Service model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new ServicesLocator();
+        $model = new Service();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->service_id]);
@@ -72,7 +72,7 @@ class ServiceController extends Controller
     }
 
     /**
-     * Updates an existing ServicesLocator model.
+     * Updates an existing Service model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -91,7 +91,7 @@ class ServiceController extends Controller
     }
 
     /**
-     * Deletes an existing ServicesLocator model.
+     * Deletes an existing Service model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,15 +104,15 @@ class ServiceController extends Controller
     }
 
     /**
-     * Finds the ServicesLocator model based on its primary key value.
+     * Finds the Service model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return ServicesLocator the loaded model
+     * @return Service the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ServicesLocator::findOne($id)) !== null) {
+        if (($model = Service::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

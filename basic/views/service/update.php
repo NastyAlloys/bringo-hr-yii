@@ -3,16 +3,14 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\ServicesLocator */
+/* @var $model app\models\Service */
 
-$this->title = Yii::t('app', 'Update {modelClass}: ', [
-    'modelClass' => 'Services Locator',
-]) . ' ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Services Locators'), 'url' => ['index']];
+$this->title = 'Редактировать: ' . ' ' . $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Services', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->service_id]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
+$this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="services-locator-update">
+<div class="service-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

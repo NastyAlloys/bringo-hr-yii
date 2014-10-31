@@ -13,7 +13,7 @@ use Yii;
  * @property string $section
  * @property integer $service_id
  */
-class ServicesLocator extends \yii\db\ActiveRecord
+class Service extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
@@ -39,11 +39,11 @@ class ServicesLocator extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'title' => 'Title',
-            'descr' => 'Descr',
-            'url_string' => 'Url String',
-            'section' => 'Section',
-            'service_id' => 'Service ID',
+            'title' => 'Название',
+            'descr' => 'Описание',
+            'url_string' => 'Адрес',
+            'section' => 'Секция',
+            'service_id' => 'service_id',
         ];
     }
 }

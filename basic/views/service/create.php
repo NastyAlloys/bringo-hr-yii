@@ -4,15 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\ServicesLocator */
+/* @var $model app\models\Service */
 
-$this->title = Yii::t('app', 'Create {modelClass}', [
-    'modelClass' => 'Services Locator',
-]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Services Locators'), 'url' => ['index']];
+$this->title = 'Новый сервис';
+$this->params['breadcrumbs'][] = ['label' => 'Services', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="services-locator-create">
+<div class="service-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
