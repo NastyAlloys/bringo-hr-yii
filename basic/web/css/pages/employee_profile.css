@@ -1,0 +1,25 @@
+.user_info_fields {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 20px 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+.user_data {
+    float: left;
+}
+
+.info_fields_container {
+    float: left;
+}
+
+.user_img {
+    background: url("../images/no_photo_img.png");
+    background-size: cover;
+    border: 5px solid #cecece;
+    border-radius: 5px;
+    height: 190px;
+    width: 213px;
+}

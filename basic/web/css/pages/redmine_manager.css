@@ -1,0 +1,9 @@
+.issue_list {
+    height: 800px;
+    overflow-y: scroll;
+    
+}
+
+.issue_list table {
+    width: 100%;
+}

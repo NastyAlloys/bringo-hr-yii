@@ -1,0 +1,51 @@
+.mypage-box {
+    color: #505050;
+    line-height: 1.5em;
+}
+
+.splitcontentleft {
+    float: left;
+    width: 50%;
+}
+
+.splitcontentright {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.task_creator {
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 50px;
+    height: 25px;
+    line-height: 22px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.task_info_fields {
+    border: 2px solid purple;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 20px 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+.task_label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.change_fields {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .splitcontentleft, .splitcontentright {
+        float: none;
+        width: 100%;
+    }
+}

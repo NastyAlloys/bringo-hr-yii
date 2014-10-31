@@ -1,0 +1,52 @@
+.changeInput {
+    background-color: #edfd56 !important;
+}
+
+a.export, a.export:visited {
+    text-decoration: none;
+    color:#000;
+    background-color:#ddd;
+    padding: 8px;
+}
+
+#new_ts_container {
+    margin: 20px 20px 20px 20px;
+    padding: 24px;
+    overflow: hidden;
+    width: auto;
+    border: 5px solid #abcbbc;
+    text-align: center;
+    color: #383838;
+    font-family: "Proxima Nova Regular",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: none;
+}
+
+#edit_ts_container {
+    margin: 20px 20px 20px 20px;
+    padding: 24px;
+    overflow: hidden;
+    width: auto;
+    border: 5px solid #abcbbc;
+    text-align: center;
+    color: #383838;
+    font-family: "Proxima Nova Regular",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: none;
+}
+
+.ts_header {
+    margin-bottom: 5px;
+}
+
+.action_btn {
+    margin-top: 5px;
+}
+
+.ht_clone_top .wtSpreader{
+    visibility:hidden;
+}
